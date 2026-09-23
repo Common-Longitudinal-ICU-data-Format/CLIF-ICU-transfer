@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clif-icu-transfer"
+version = "2.1.0"
+description = "clif direct icu transfer analysis"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyterlab>=4.0.0",
+    "matplotlib>=3.9.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "pyarrow>=17.0.0",
+    "pyodbc>=5.0.0",
+    "pytz>=2025.1",
+    "requests>=2.32.0",
+    "seaborn>=0.13.0",
+    "sqlalchemy>=2.0.0",
+    "tqdm>=4.66.0",
+    "duckdb>=1.0.0",
+    "clifpy>=0.5.0",
+    "openpyxl>=3.1.5",
+    "statsmodels>=0.14.0",
+    "plotly>=5.24.0",
+    "kaleido>=0.2.1",
+]
+
+[tool.setuptools]
+packages = []
