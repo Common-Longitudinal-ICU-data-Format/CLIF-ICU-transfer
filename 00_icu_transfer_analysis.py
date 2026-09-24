@@ -1112,9 +1112,13 @@ def main():
 
         co.load_table('hospitalization')
         hosp = co.hospitalization.df.copy()
+        hosp['admission_dttm'] = pd.to_datetime(hosp['admission_dttm'])
+        hosp['discharge_dttm'] = pd.to_datetime(hosp['discharge_dttm'])
 
         co.load_table('adt')
         adt = co.adt.df.copy()
+        adt['in_dttm'] = pd.to_datetime(adt['in_dttm'])
+        adt['out_dttm'] = pd.to_datetime(adt['out_dttm'])
 
         if verbose:
             print(f"   → hospitalization: {len(hosp):,} rows")
